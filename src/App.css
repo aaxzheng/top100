@@ -1,0 +1,80 @@
+.wine-item {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+.wine-item:hover {
+  background-color:#a4c2dc;
+}
+
+.wine-info {
+  display:flex;
+  justify-content: flex-start;
+  width:200px;
+}
+
+.score {
+  margin-left:25px;
+}
+
+.wine-list-wrapper {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: scroll;
+  height:60vh;
+  margin-top:60px;
+  border: 1px solid black;
+  width:1400px;
+}
+
+.wine-list {
+  width:100%;
+}
+
+.legend {
+  font-size:24px;
+  font-weight:700;
+}
+
+.legend-key {
+  position:fixed;
+  top:34px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:1370px;
+}
+
+.legend-key:hover{
+  background-color: white;
+}
+
+.wine-main {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wine-notes {
+  border: 1px solid black;
+  border-top: none;
+  width:1400px;
+  height:30vh;
+}
+
+.wine-notes-text {
+  margin: auto 0;
+  font-size:24px;
+  padding: 20px;
+  height:100%;
+}
+
+.wine-notes-wrapper {
+  display:flex;
+  align-items: center;
+}
