@@ -26,6 +26,7 @@ class App extends Component {
   }
   
   updateNotes(id) {
+    // This function calls the network request to obtain the notes for a given wine
     let notes;
     fetch('https://top-100-example.s3.amazonaws.com/' + id.toString() + '.json').then((response) => {
       return response.json();
@@ -35,9 +36,11 @@ class App extends Component {
   }
 
   handleMouseOver(e) {
+    //This function handles the mouseOver events for the wine list. 
     let id = e.currentTarget.getAttribute("wineid");
     clearTimeout(this.timeoutId);
     this.timeoutId = setTimeout(() => this.updateNotes(id), 400);
+    //This is where the throttling occurs. The timeout will be cleared everytime the user mouses over an object and it will not call the function unless .4 seconds have passed.
   }
 
   render() {
